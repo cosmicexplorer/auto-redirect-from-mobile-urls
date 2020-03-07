@@ -1,0 +1,45 @@
+{
+  "name": "auto-redirect-from-mobile-urls",
+  "version": "1.0.0",
+  "description": "???",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "npm i . && $(npm bin)/cake check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cosmicexplorer/auto-redirect-from-mobile-urls.git"
+  },
+  "keywords": [
+    "todo"
+  ],
+  "author": "Danny McClanahan",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/cosmicexplorer/auto-redirect-from-mobile-urls/issues"
+  },
+  "homepage": "https://github.com/cosmicexplorer/auto-redirect-from-mobile-urls#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/plugin-transform-react-jsx": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "babel-preset-env": "^1.7.0",
+    "browserify": "^16.5.0",
+    "coffeescript": "^2.5.0",
+    "convert-source-map": "^1.7.0",
+    "flow": "^0.2.3",
+    "flow-bin": "^0.117.0",
+    "glob": "^7.1.6",
+    "unflowify": "^1.0.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "tone": "^13.8.25"
+  },
+  "plugins": [
+    "@babel/plugin-transform-react-jsx"
+  ]
+}

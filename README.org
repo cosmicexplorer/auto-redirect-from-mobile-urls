@@ -1,10 +1,13 @@
 #+TITLE: auto-redirect-from-mobile-urls
 
-ff/chrome add-on to strip e.g. the ~.m.~ url component from ~en.m.wikipedia.org~ when on a desktop browser.
+firefox add-on to strip e.g. the ~.m.~ url component from ~en.m.wikipedia.org~ when on a desktop browser.
 
-* UX [0/4]
-1. [ ] by default, inspect the URL for any ~.m.~ component, and strip it if so.
-   - immediately redirecting to the stripped URL
+* Build
+Run ~npm install . && cake bundle~.
+
+* UX [0/5]
+1. [-] by default, inspect the URL for any ~.m.~ component, and strip it if so.
+   - [X] immediately redirecting to the stripped URL
    - /TODO: error handling if the new URL 404s???/
    - [ ] /TODO: research how to query the page content for any tags indicating that it is specifically mobile?/
    - [ ] /TODO: research other typical url renaming conventions commonly used on mobile sites?/
@@ -13,3 +16,4 @@ ff/chrome add-on to strip e.g. the ~.m.~ url component from ~en.m.wikipedia.org~
 3. [ ] with a dropdown menu, allow adding a regex replacement table entry to the current page
    - [ ] /TODO: maybe default the regex to cover the *domain* instead of the full page url?/
 4. [ ] vice versa if we are on a mobile browser (firefox for android supports some add-ons now!!)
+5. [ ] publish to firefox add-ons: see https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension
